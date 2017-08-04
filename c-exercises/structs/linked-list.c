@@ -27,11 +27,15 @@ void insert(int num) {
     return;
   }
   p = head;
-  while(p->next != head)
+
+  while(p->next != head){
     p = p->next;
+  }
+
   p->next = point;
   point->next = head;
 }
+
 void printNum() {
   struct node *pntr = head;
 

@@ -54,3 +54,15 @@ p t
 * D. nil
 
 **Ans: B**
+
+## Question5
+
+**Which variable names are valid as local variables? (Choose three.)**
+
+* A. _365
+* B. z
+* C. 7years
+* D. break
+* E. latitude
+
+**Ans: A, B, E (local variables can't start with a number and break is a reserved word)

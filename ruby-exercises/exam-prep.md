@@ -14,10 +14,12 @@
 ## Question2
 
 **Which of the following is the correct output for the program given below?**
-    def foo (a, *b)
-      p a
-    end
-    foo(1,2,3,4)
+```
+def foo (a, *b)
+  p a
+end
+foo(1,2,3,4)
+```
 * A. nil
 * B. 1
 * C. An error has occurred.

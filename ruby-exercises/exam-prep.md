@@ -65,4 +65,20 @@ p t
 * D. break
 * E. latitude
 
-**Ans: A, B, E (local variables can't start with a number and break is a reserved word)
+**Ans: A, B, E (local variables can't start with a number and break is a reserved word)**
+
+## Question6
+
+**Which of the following is the correct output for the program given below?**
+```
+(5..8).each_with_index do |val,i|
+puts "#{i} #{val}"
+end
+```
+
+A. 1 5    B. 0 5    C. 5 1    D. 5 0    E. an error has occurred.
+   2 6       1 6       6 2       6 1
+   3 7       2 7       7 3       7 2
+   4 8       3 8       8 4       8 3
+
+   **Ans: B**

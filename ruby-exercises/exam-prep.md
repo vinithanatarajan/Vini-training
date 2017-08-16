@@ -48,9 +48,9 @@ puts({"members" => 193, "year" => 2014}.size)
 t = Time.now + (60*60*24)
 p t
 ```
-*A. current system time
-*B. current system time + a day later
-*C. An error has occurred.
-*D. nil
+* A. current system time
+* B. current system time + a day later
+* C. An error has occurred.
+* D. nil
 
 **Ans: B**

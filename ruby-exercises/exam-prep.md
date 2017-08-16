@@ -101,3 +101,16 @@ end
 ```
 
 **Ans: B**
+
+## Question7
+
+**Which of the following is the correct output for the program given below?**
+```
+p 100.downto(90).select{|x| x%2==0}
+```
+* A. [100,99,98,97,96,95,94,93,92,91,90]
+* B. [90,92,94,96,98,100]
+* C. [100,98,96,94,92,90]
+* D. []
+
+**Ans: C**

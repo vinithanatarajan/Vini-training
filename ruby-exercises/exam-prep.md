@@ -27,3 +27,16 @@ foo(1,2,3,4)
 * E. [1]
 
 **Ans: B**
+
+## Question3
+
+**Which of the following is the correct output for the program given below?**
+```
+puts({"members" => 193, "year" => 2014}.size)
+```
+* A. 15
+* B. 6
+* C. 4
+* D. 2
+
+**Ans: D**

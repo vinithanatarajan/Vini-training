@@ -75,7 +75,7 @@ p t
 puts "#{i} #{val}"
 end
 ```
-
+```
 * A. 1 5
      2 6
      3 7
@@ -98,5 +98,6 @@ end
      8 3
 
 * E. an error has occurred.
+```
 
 **Ans: B**

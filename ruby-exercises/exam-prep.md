@@ -76,9 +76,27 @@ puts "#{i} #{val}"
 end
 ```
 
-A. 1 5    B. 0 5    C. 5 1    D. 5 0    E. an error has occurred.
-   2 6       1 6       6 2       6 1
-   3 7       2 7       7 3       7 2
-   4 8       3 8       8 4       8 3
+* A. 1 5
+     2 6
+     3 7
+     4 8
 
-   **Ans: B**
+* B. 0 5
+     1 6
+     2 7
+     3 8
+
+
+* C. 5 1
+     6 2
+     7 3
+     8 4
+
+* D  5 0
+     6 1
+     7 2
+     8 3
+
+* E. an error has occurred.
+
+**Ans: B**

@@ -131,3 +131,30 @@ p [1,1,2,3,5,8].__(1)__｛|x| x*2}
 * E. join
 
 **Ans: B & C**
+
+## Question9
+**Which of the following is the correct output for the program given below ?**
+```puts "Ruby on Rails".delete("Rails")
+```
+* B. Ruby on
+* C. Rails
+* D. uby on
+* E. Ruby
+
+**Ans: D**
+
+## Question10
+**An error occurred while trying to create a string using a here document.**
+**Which of the following solutions are appropriate? (Choose two.)**
+```
+doc = <<EOF
+ The quick brown fox
+ jumps over the lazy dog
+ EOF
+```
+* A. Replace the first <<EOF with <<-EOF.
+* B. Replace the last EOF with >>EOF.
+* C. Remove the whitespace in front of the last EOF.
+* D. Replace the first <<EOF with << EOF.
+
+**Ans: A & C**

@@ -114,3 +114,20 @@ p 100.downto(90).select{|x| x%2==0}
 * D. []
 
 **Ans: C**
+
+## Question8
+
+**Which of the following can be inserted into __(1)__ in order for the given**
+**code to generate the output below? (Choose two.)**
+```
+p [1,1,2,3,5,8].__(1)__｛|x| x*2}
+[output]
+[2,2,4,6,10,16]
+```
+* A. compact
+* B. collect
+* C. map
+* D. flatten
+* E. join
+
+**Ans: B & C**

@@ -158,3 +158,77 @@ doc = <<EOF
 * D. Replace the first <<EOF with << EOF.
 
 **Ans: A & C**
+
+## Question11
+**Which of the following can be inserted into __(1)__ in order for the given**
+**code to generate the output below?**
+```
+h = {1=>2, 3=>4}
+h.__(1)__
+p h #=>{}
+ary = [1, 2]
+ary.__(1)__
+p ary #=>[]
+```
+* A. clear
+* B. remove
+* C. destroy
+* D. empty?
+
+**Ans: A**
+
+## Question12
+**Which of the following can be inserted into __(1)__ in order for the given**
+**code to generate the output below? (Choose two.)**
+```
+a = [1,2,3,4,5]
+p __(1)__ #=>[1,2,3]
+```
+
+* A. a[0..2]
+* B. a[1..2]
+* C. a.slice(0,3)
+* D. a.slice(0...2)
+**Ans: C**
+
+## Question13
+**Which of the following is the correct output for the program given below?**
+```
+str = "RubyAssociation".chomp
+```
+* A. "RubyAssociation\r"
+* B. "RubyAssociation"
+* C. "RubyAssociation\r\n"
+* D. "RubyAssociation\r\n\r\n"
+
+**Ans: B**
+
+## Question14
+**Which of the following is the correct output** for the program given below ?**
+```
+str = "RubyAssociation\r\n".chop
+```
+* A. "RubyAssociation"
+* B. "RubyAssociation\r"
+* C. "RubyAssociation\r\n"
+* D. "RubyAssociation\r\n\r\n"
+
+**Ans: A**
+
+## Question15
+**Which of the following is a correct statement about io.rewind?**
+
+```
+File.open("foo.txt","r") do |io|
+ puts io.gets
+ puts io.read
+ io.rewind
+ p lines = io.readlines
+end
+```
+* A. Return a string describing this IO object.
+* B. Positions ios to the beginning of input, resetting lineno to zero.
+* C. Returns true if ios is associated with a terminal device (tty), false otherwise.
+* D. Returns an integer representing the numeric file descriptor for ios.
+
+**Ans: A**

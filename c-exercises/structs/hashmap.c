@@ -25,7 +25,7 @@ typedef struct people {
   struct people* next;
 }people;
 
-void addNode(people* list){
+void printNode(people* list){
   printf("printing name and age %s %d\n", list->name, list->age);
 }
 
@@ -34,10 +34,32 @@ void printpeople(people* ppeople){
   people * current = ppeople;
 
   while (current != NULL) {
-    addNode(current);
+    printNode(current);
     current = current->next;
   }
 }
+
+void printage(people* agelist){
+  people * current = agelist;
+  while (current != NULL) {
+    if(current->age > 30){
+      printNode(current);
+     }
+     current = current->next;
+   }
+}
+
+void printname(people* namelist){
+   people * current = namelist;
+   while (current != NULL) {
+    if( strcmp (current->name, "Chris") == 0){
+      printNode(current);
+    }
+      current = current->next;
+  }
+}
+
+void addToHash()
 
 people * add_node(people * head, char name[10], int age) {
   people * current = head;
@@ -71,10 +93,11 @@ int main() {
   for(n = 0; n < 26; n++){
     list_of_pointers[n] = NULL;
   }
+
   list_of_pointers[hashfunction("Aron")] = add_node(list_of_pointers[hashfunction("Aron")], "Aron", 30);
   list_of_pointers[hashfunction("Bob")] = add_node(list_of_pointers[hashfunction("Bob")],"Bob", 31);
   list_of_pointers[hashfunction("Chris")] = add_node(list_of_pointers[hashfunction("Chris")],"Chris", 32);
-  list_of_pointers[hashfunction("Chris")] = add_node(list_of_pointers[hashfunction("Chris")],"Chris", 32);
+  list_of_pointers[hashfunction("Chris")] = add_node(list_of_pointers[hashfunction("Chris")],"Chris", 34);
 
   list_of_pointers[hashfunction("Caleb")] = add_node(list_of_pointers[hashfunction("Caleb")],"Caleb", 32);
 
@@ -85,6 +108,14 @@ int main() {
 
   for(n = 0; n < 26; n++){
   printpeople(list_of_pointers[n]);
+  }
+
+  for(n = 0; n < 26; n++){
+  printname(list_of_pointers[n]);
+  }
+
+  for(n = 0; n < 26; n++){
+  printage(list_of_pointers[n]);
   }
   return 0;
 }
